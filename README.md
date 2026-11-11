@@ -8,5 +8,6 @@ El fondo va a consistir en un video stock sacado de YouTube, el cual se exportar
 ### Los peces
 Para este caso se tienen 2 teorías diferentes de cómo podría funcionar. 
 #### Formato gif
-En el caso que se lleg
+En el caso de que se llegue a crear una ilustración en Illustrator, se pasará a Adobe After Effects para que de esta manera pueda ser un gif animado a 24 fps.
 #### Formato SVG
+A diferencia del anterior, este utilizará una librería, ya sea de css o javascript, para poder animar la figura creada desde Illustrator, para que de esta manera tenga un movimiento más repentino.
