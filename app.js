@@ -1,11 +1,20 @@
 const backgroundAudio = document.getElementById('background-audio');
+const audioControl = document.getElementById('audio-control');
 
 if (backgroundAudio) {
     const startAudio = () => {
-        backgroundAudio.load();
-        backgroundAudio.play().catch((error) => {
-            console.warn('El navegador bloqueo el autoplay con sonido:', error);
-        });
+        backgroundAudio.play()
+            .then(() => {
+                if (audioControl) {
+                    audioControl.hidden = true;
+                }
+            })
+            .catch((error) => {
+                if (audioControl) {
+                    audioControl.hidden = false;
+                }
+                console.warn('El navegador bloqueo el autoplay con sonido:', error);
+            });
     };
 
     startAudio();
@@ -16,6 +25,9 @@ if (backgroundAudio) {
         window.removeEventListener('keydown', enableAudioAfterInteraction);
     };
 
+    audioControl?.addEventListener('click', () => {
+        startAudio();
+    });
     window.addEventListener('pointerdown', enableAudioAfterInteraction, { once: true });
     window.addEventListener('keydown', enableAudioAfterInteraction, { once: true });
 }
