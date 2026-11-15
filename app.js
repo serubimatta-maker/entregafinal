@@ -31,3 +31,23 @@ if (backgroundAudio) {
     window.addEventListener('pointerdown', enableAudioAfterInteraction, { once: true });
     window.addEventListener('keydown', enableAudioAfterInteraction, { once: true });
 }
+
+const gifTooltip = document.createElement('span');
+gifTooltip.className = 'gif-tooltip';
+document.body.appendChild(gifTooltip);
+
+document.querySelectorAll('.video[title]').forEach((gif) => {
+    const showTooltip = () => {
+        const bounds = gif.getBoundingClientRect();
+        gifTooltip.textContent = gif.title;
+        gifTooltip.style.left = `${bounds.left + bounds.width / 2}px`;
+        gifTooltip.style.top = `${bounds.top}px`;
+        gifTooltip.classList.add('visible');
+    };
+
+    gif.addEventListener('mouseenter', showTooltip);
+    gif.addEventListener('mousemove', showTooltip);
+    gif.addEventListener('mouseleave', () => {
+        gifTooltip.classList.remove('visible');
+    });
+});

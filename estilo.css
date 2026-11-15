@@ -10,8 +10,8 @@ body {
     position: fixed;
     inset: 0;
     z-index: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     pointer-events: none;
 }
@@ -44,6 +44,26 @@ header {
     animation: nadar-por-la-pantalla 35s linear infinite;
 }
 
+.video-lower {
+    animation: nadar-por-la-pantalla-abajo 42s linear infinite;
+}
+
+.gif-tooltip {
+    position: fixed;
+    z-index: 4;
+    display: none;
+    padding: 0.35rem 0.6rem;
+    color: #fff;
+    background: rgb(0 0 0 / 80%);
+    border-radius: 0.25rem;
+    pointer-events: none;
+    transform: translate(-50%, -100%);
+}
+
+.gif-tooltip.visible {
+    display: block;
+}
+
 @keyframes nadar-por-la-pantalla {
     0% {
         top: 45%;
@@ -53,6 +73,20 @@ header {
 
     100% {
         top: 45%;
+        left: 100%;
+        transform: none;
+    }
+}
+
+@keyframes nadar-por-la-pantalla-abajo {
+    0% {
+        top: 72%;
+        left: -20%;
+        transform: none;
+    }
+
+    100% {
+        top: 72%;
         left: 100%;
         transform: none;
     }
