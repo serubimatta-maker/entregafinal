@@ -48,6 +48,10 @@ header {
     animation: nadar-por-la-pantalla-abajo 42s linear infinite;
 }
 
+.video-nude {
+    animation-delay: -18s;
+}
+
 .gif-tooltip {
     position: fixed;
     z-index: 4;
