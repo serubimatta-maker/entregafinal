@@ -1,17 +1,4 @@
 const backgroundAudio = document.getElementById('background-audio');
-const fishVideo = document.getElementById('fish-video');
-
-if (fishVideo) {
-    fishVideo.addEventListener('ended', () => {
-        fishVideo.classList.remove('reiniciar-animacion');
-        void fishVideo.offsetWidth;
-        fishVideo.classList.add('reiniciar-animacion');
-        fishVideo.currentTime = 0;
-        fishVideo.play().catch(() => {
-            // El video permanece detenido si el navegador bloquea su reproduccion.
-        });
-    });
-}
 
 if (backgroundAudio) {
     const startAudio = () => {

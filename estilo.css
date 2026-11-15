@@ -28,6 +28,7 @@ header {
     height: auto;
     pointer-events: none;
     animation: nadar-por-la-pantalla 35s linear infinite;
+  background: transparent; /* por defecto ya lo es */
 }
 
 .video.reiniciar-animacion {
@@ -36,32 +37,14 @@ header {
 
 @keyframes nadar-por-la-pantalla {
     0% {
-        top: 8%;
-        left: 5%;
-        transform: rotate(12deg);
-    }
-
-    25% {
-        top: 18%;
-        left: 78%;
-        transform: rotate(80deg);
-    }
-
-    50% {
-        top: 72%;
-        left: 82%;
-        transform: rotate(170deg);
-    }
-
-    75% {
-        top: 78%;
-        left: 12%;
-        transform: rotate(255deg);
+        top: 45%;
+        left: -20%;
+        transform: none;
     }
 
     100% {
-        top: 8%;
-        left: 5%;
-        transform: rotate(372deg);
+        top: 45%;
+        left: 100%;
+        transform: none;
     }
 }
