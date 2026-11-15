@@ -11,3 +11,14 @@ Para este caso se tienen 2 teorías diferentes de cómo podría funcionar.
 En el caso de que se llegue a crear una ilustración en Illustrator, se pasará a Adobe After Effects para que de esta manera pueda ser un gif animado a 24 fps.
 #### Formato SVG
 A diferencia del anterior, este utilizará una librería, ya sea de css o javascript, para poder animar la figura creada desde Illustrator, para que de esta manera tenga un movimiento más repentino.
+
+
+
+
+
+### Referencias:
+
+Videos originales:
+https://www.youtube.com/watch?v=YKPIOvShdU8
+https://www.youtube.com/watch?v=f1AHqA1g7m8
+
