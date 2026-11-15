@@ -2,8 +2,9 @@ const backgroundAudio = document.getElementById('background-audio');
 
 if (backgroundAudio) {
     const startAudio = () => {
-        backgroundAudio.play().catch(() => {
-            // El navegador esperara una interaccion del usuario para permitir sonido.
+        backgroundAudio.load();
+        backgroundAudio.play().catch((error) => {
+            console.warn('El navegador bloqueo el autoplay con sonido:', error);
         });
     };
 
