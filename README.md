@@ -18,4 +18,6 @@ Cada gif contiene un atributo este es ''title'', en JavaScript las imagenes que 
 Videos originales:
 https://www.youtube.com/watch?v=YKPIOvShdU8
 https://www.youtube.com/watch?v=f1AHqA1g7m8
+https://www.youtube.com/watch?v=tmeRYM5dIC8
+https://www.youtube.com/watch?v=X7XGpZj_6Ug
 
