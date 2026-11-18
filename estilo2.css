@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 html,
 body {
     width: 100%;
@@ -19,6 +21,46 @@ body {
 header {
     position: relative;
     z-index: 2;
+}
+
+.btn {
+    position: relative;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 14px 28px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #67e8f9;
+    background: rgba(34, 211, 238, 0.06);
+    border: 2px solid #22d3ee;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgba(34, 211, 238, 0.55), inset 0 0 12px rgba(34, 211, 238, 0.35);
+    text-shadow: 0 0 10px rgba(34, 211, 238, 0.9);
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform 200ms ease, box-shadow 200ms ease, filter 200ms ease;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 18px rgba(34, 211, 238, 0.55), inset 0 0 12px rgba(34, 211, 238, 0.35), 0 0 34px rgba(34, 211, 238, 0.7);
+}
+
+.btn:active {
+    transform: translateY(1px) scale(0.98);
+}
+
+.btn:focus-visible {
+    outline: 3px solid #22d3ee;
+    outline-offset: 3px;
 }
 
 #audio-control {
