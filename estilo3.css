@@ -4,6 +4,7 @@ body {
     height: 100%;
     margin: 0;
     overflow: hidden;
+    color: white;
 }
 
 .background-video {
@@ -19,6 +20,14 @@ body {
 header {
     position: relative;
     z-index: 2;
+}
+
+a,
+p,
+h3 {
+    position: relative;
+    z-index: 2;
+    color: white;
 }
 
 #audio-control {

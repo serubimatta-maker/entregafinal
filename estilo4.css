@@ -4,6 +4,7 @@ body {
     height: 100%;
     margin: 0;
     overflow: hidden;
+    color: white;
 }
 
 .background-video {
@@ -22,7 +23,8 @@ header {
 }
 
 p,
-h3 {
+h3,
+a {
     position: relative;
     z-index: 2;
     color: white;
