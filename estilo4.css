@@ -21,6 +21,13 @@ header {
     z-index: 2;
 }
 
+p,
+h3 {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
 #audio-control {
     position: fixed;
     right: 1rem;
