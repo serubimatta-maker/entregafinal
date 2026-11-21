@@ -27,7 +27,11 @@ header {
 body > h3,
 body > p {
     position: relative;
-    z-index: 2;
+    z-index: 3;
+    color: white;
+}
+
+h3 {
     color: white;
 }
 

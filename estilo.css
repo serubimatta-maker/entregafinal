@@ -22,6 +22,12 @@ header {
     z-index: 3;
 }
 
+h4 {
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+
 p {
     position: relative;
     z-index: 3;
