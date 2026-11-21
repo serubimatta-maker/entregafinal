@@ -43,7 +43,6 @@ p {
     width: clamp(55px, 8vw, 110px);
     height: auto;
     pointer-events: auto;
-    mix-blend-mode: screen;
     animation: nadar-por-la-pantalla 35s linear infinite;
   background: transparent; /* por defecto ya lo es */
 }
