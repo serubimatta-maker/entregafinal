@@ -59,6 +59,11 @@ p {
     animation-delay: -18s;
 }
 
+.video-allineed {
+    animation: nadar-por-la-pantalla-arriba 38s linear infinite;
+    animation-delay: -9s;
+}
+
 .gif-tooltip {
     position: fixed;
     z-index: 4;
@@ -98,6 +103,20 @@ p {
 
     100% {
         top: 72%;
+        left: 100%;
+        transform: none;
+    }
+}
+
+@keyframes nadar-por-la-pantalla-arriba {
+    0% {
+        top: 28%;
+        left: -20%;
+        transform: none;
+    }
+
+    100% {
+        top: 28%;
         left: 100%;
         transform: none;
     }
