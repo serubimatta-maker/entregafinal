@@ -43,5 +43,6 @@ https://www.youtube.com/watch?v=X7XGpZj_6Ug
 #### Librerias:
 
 https://cssbuttoncreator.com/css-buttons/neon/
+https://welearncode.com/rainbow-text/
 
 
