@@ -40,6 +40,9 @@ https://www.youtube.com/watch?v=f1AHqA1g7m8
 https://www.youtube.com/watch?v=tmeRYM5dIC8
 https://www.youtube.com/watch?v=X7XGpZj_6Ug
 
+Datos sobre el album In Rainbows:
+https://es.wikipedia.org/wiki/In_Rainbows
+
 #### Librerias:
 
 https://cssbuttoncreator.com/css-buttons/neon/
