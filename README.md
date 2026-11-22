@@ -19,7 +19,7 @@ El pez se saco un video de youtube que de misma manera que el fondo fue editado 
 Los peces al ser gifs se les ponen en un 
 
 #### El sistema del mouse
-Cada gif contiene un atributo este es ''title'', en JavaScript las imagenes que tienen title buscan el mouse y crea un elemento el cual crea el nombre del texto. En estilo.css coloca el texto encima del pez y cuando mouse se quita del gif este oculta el texto. 
+Cada gif contiene un atributo este es ''title'', en JavaScript las imagenes que tienen title buscan el mouse y crea un elemento el cual crea el nombre del texto. En estilo.css coloca el texto encima del pez y cuando mouse se quita del gif este oculta el texto. Esta funcion se le conoece como tooltip.
 
 #### Fondo de los peces girando
 El fondo fue creado desde blender a partir del video editado con el efecto coloramo, 
