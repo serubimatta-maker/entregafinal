@@ -111,3 +111,29 @@ h3 {
         transform: none;
     }
 }
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: "Radiohead", sans-serif;
+  font-size: clamp(2.25rem, 4vw, 3.5rem);
+  text-align: center;
+  background: linear-gradient(90deg,
+    #ff4d38 0%,
+    #ff9a35 12%,
+    #ffe94a 24%,
+    #43f17b 36%,
+    #27e0df 48%,
+    #35a9ff 60%,
+    #8c63ff 72%,
+    #ff5bd8 84%,
+    #ff334f 100%);
+  background-size: 100% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.45);
+  filter:
+    drop-shadow(0 0 6px rgba(43, 207, 255, 0.75))
+    drop-shadow(0 0 12px rgba(255, 70, 124, 0.55));
+}
