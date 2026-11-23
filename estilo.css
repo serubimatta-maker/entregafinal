@@ -135,9 +135,9 @@ p {
   align-items: center;
   justify-content: center;
   gap: .5em;
-  padding: 14px 28px;
+  padding: 8px 16px;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.14000000000000001332267629550187848508358001708984375em;
