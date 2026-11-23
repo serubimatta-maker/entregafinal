@@ -112,6 +112,12 @@ h3 {
     }
 }
 
+@font-face {
+  font-family: "Radiohead";
+  src: url("./assets/radiohead.ttf") format("truetype");
+  font-display: swap;
+}
+
 h1 {
   margin-top: 0px;
   margin-bottom: 10px;
