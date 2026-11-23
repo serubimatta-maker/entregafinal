@@ -43,6 +43,9 @@ https://www.youtube.com/watch?v=X7XGpZj_6Ug
 Datos sobre el album In Rainbows:
 https://es.wikipedia.org/wiki/In_Rainbows
 
+Significado y letras de las canciones:
+https://www.musica.com
+
 #### Librerias:
 
 https://cssbuttoncreator.com/css-buttons/neon/
