@@ -14,6 +14,9 @@ Uno de los problemas que se presento con el texto fue que este no se mostraba en
 El pez se saco un video de youtube que de misma manera que el fondo fue editado con after effects poniendole un efecto de coloramo, con el video terminado este se paso a un formato gif, se aprego un hypervinculo a cada gif para que lleve a las paginas de las canciones, tambien con ayuda de inteligencia artificial se logro que arriba del gif cuando el usuario ponga su mouse en el pez.
 
 #### peces transparentes
+Para mi esta fue de las partes mas dificiles y se probaron multiples teorias antes de llegar a la final. Al terminar de editar el video intente ponerlo directamente dentro de la pagina web el problema de este fue que no quedaba transparente, despues a partir de ese video se intento ponerlo e codigo blend-mode-mix para que dentro de la pantalla, pero al final no me termino convenciendo.
+
+Por esta razon obte por otro metodo a traves del formato gif mas corto para que de esta manera sea mas natural el movimiento del pez, en una aplicacion transforme el mp4 a gif sin fondo y gracias al background transparent se afirma el efecto.
 
 #### Movimiento peces
 Los peces al ser gifs se les ponen en una ''class'' y img que permiten ponerlos en css, desde css se crea un codigo de @keyframes nadar-por-la-pantalla que se lo ponen al clase del video con un infinite y linear el cual permite que su movimiento sea constante.
@@ -21,15 +24,21 @@ Los peces al ser gifs se les ponen en una ''class'' y img que permiten ponerlos 
 #### El sistema del mouse
 Cada gif contiene un atributo este es ''title'', en JavaScript las imagenes que tienen title buscan el mouse y crea un elemento el cual crea el nombre del texto. En estilo.css coloca el texto encima del pez y cuando mouse se quita del gif este oculta el texto. Esta funcion se le conoece como tooltip.
 
-#### Fondo de los peces girando
-El fondo fue creado desde blender a partir del video editado con el efecto coloramo, (a partir de aqui se viene una explicacion un poco diificil que no conlleva casi nada de visual studio pero igual me parece nesecario para entender como funciona la pagina), 
+### Fondo de peces
+
+El fondo del principio lo hize yo desde la plataforma de blender a partir del video del pez con el colorama, esta parte siento que es la mas dificil de explicar debido a que no tiene nada que ver con visual studio pero siento que es importante para comprender como funciona la pagina.
+
+#### Rotacion peces
+La rotacion de los peces en este cada no es animada manualmente si no que cada anallo tiene un objeto vacio, con un driver la cual recalcula una expresion por cada frame que es rotación_Z = frame × velocidad , ubicado dentro del centro de la escena, en este caso todos los peces son los hijos de un anillo, en Blender cuando un padre rota a sus hijos estos heredan el movimiento del anillo.
+
+#### Particulas
+La particulas son 380 planos pequeños los cuales cada uno continen un degrado radial que los permite parecer puntos de luz, en este caso tambien son hijos del anillom en este caso su driver es frame × 0,0025. 
+
+#### Colores peces
+En este caso el video del pez con coloramo tiene una paleta de colores RGB, l cual con premiere se utiliza un nodo para pasar a BW una escala de grises, o sea que solo queda con el brillo del pixel, debido a esto se le puede apregar otro nodo conocidco como coloramp, el cual traduce el brillo a colores, el resultado del proceso va a otro nodo conocido como Emmision y transparent BSDF que el negro desaparezca y solo se vea el pez. 
 
 ### Loop del audio
-- En las 5 paginas webs el audio empieza buscando el boton de audio dentro de javascript por medio de las ID.
-- El atributo loop es quien logra que el audio se reproduzca en un bucle, despues el navegador detecta con un codigo de javascript si el audio ya repitio, para que este se reinicie.
-- A partir de lo anterior la propiedad (backgroundAudio) verifica que el audio se repitio correctamente para empezar de nevo.
-- Para que la interfaz de la pagina sea limpia, el boton que permita al audio continuar es ocultado a traves de un codigo audioControl.hidden = true;
-- (Para el siguiente problema si le pedi ayuda a inteligencia artificial debido a que mis conocimientos de programacion no me permitian resolverlo), un problema que tienen muchos navegadores es que el audio no puede empezar a menos de que el usuario haya interectuado con la pagina, por esta razon en app.js se creo una funcion en la linea numero 22 el cual permitia que por un window.removeEventListener eliminara los detectores de click y teclado.
+El <audio> tiene el atributo <loop> el cual hace que la cancion vuelva inicar automativamente cuando termine. Despues javascript inteta reproducirla al carga la pagina debido a que algunos navegadores bloquean el audio automatico, por esta razon tambien intenta activarlo cuando el usuario hace ''click'' con la pagina, en una situacion donde la pagina no logre reproducir el audios se mostrara un boton para activarlo. 
 
 
 ### Referencias:
